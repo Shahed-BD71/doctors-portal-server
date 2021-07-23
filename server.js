@@ -20,7 +20,6 @@ client.connect((err) => {
   const appointmentCollection = client.db("doctors-portal").collection("appointments");
   const doctorCollection = client.db("doctors-portal").collection("doctors");
 
-  // perform actions on the collection object
   app.post("/addAppointment", (req, res) => {
     const appointment = req.body;
     appointmentCollection.insertOne(appointment).then((result) => {
@@ -85,13 +84,7 @@ client.connect((err) => {
      res.send(doctors.length > 0);
     });
   });
-
-  
 });
-
-
-
-
 
 
 // Root API
