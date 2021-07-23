@@ -20,10 +20,6 @@ client.connect((err) => {
   const appointmentCollection = client.db("doctors-portal").collection("appointments");
   const doctorCollection = client.db("doctors-portal").collection("doctors");
 
-
-  app.get("/", (req, res) => {
-    res.send("hello from db it's working!!");
-  });
   // perform actions on the collection object
   app.post("/addAppointment", (req, res) => {
     const appointment = req.body;
@@ -90,6 +86,16 @@ client.connect((err) => {
     });
   });
 });
+
+
+
+
+
+
+// Root API
+ app.get("/", (req, res) => {
+   res.send("<h1>Hello From the Server Side</h1>");
+ });
 
 const port = process.env.PORT || 5000;
 
