@@ -85,6 +85,8 @@ client.connect((err) => {
      res.send(doctors.length > 0);
     });
   });
+
+  
 });
 
 
