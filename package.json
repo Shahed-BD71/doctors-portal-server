@@ -19,6 +19,14 @@
     "start": "node server.js",
     "start:dev": "nodemon server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shahed-BD71/doctors-portal-server.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shahed-BD71/doctors-portal-server/issues"
+  },
+  "homepage": "https://github.com/Shahed-BD71/doctors-portal-server#readme"
 }
